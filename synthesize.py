@@ -179,6 +179,8 @@ if __name__ == '__main__':
 
   
   filesiter = [f for f in os.listdir('specText')]
+  premove = subprocess.run(["rm", "-rf", "proglogs", "prooflogs", "proverLLMSpec"], stderr=subprocess.PIPE)
+  pcreate = subprocess.run(["mkdir", "proglogs", "prooflogs", "proverLLMSpec"], stderr=subprocess.PIPE)
   #filesiter = ['findMinNode.txt']
   #pdb.set_trace()  
   countiter = 0
@@ -289,7 +291,7 @@ if __name__ == '__main__':
     else:
       
       flist = returnHelperSpecs(hfunc, unspecv)
-      compcertast = astForMainProgram(lines[1], lines[1] + ".v")
+      compcertast = astForMainProgram(lines[1], lines[1] + "C.v")
       vstspec = vstSpecforMainFunction(lines[1], unspecv)
       writeToBenchmarkFile(cprog, compcertast, vstspec, flist, lines[1] + ".txt")
       end_time = time.perf_counter()
