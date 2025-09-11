@@ -10,6 +10,7 @@ Requirements:
 
 
 ##############################################
+
 To run:
 python3.9 synthesize.py <API-KEY>
 This calls all the specifications under specText file with GPT-5mini. 
