@@ -1,0 +1,6 @@
+{n >= 0}{if n % 2 = 0 then true else false}
+isEven
+bool isEven(int n)
+The function returns true if n is even and false otherwise.
+Input: n = 12, Output: true
+Input: n = 5, Output: false

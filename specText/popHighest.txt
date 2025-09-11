@@ -1,0 +1,21 @@
+{a}{a * top, top -> l, where len(l) = len(a) - 1 /\ (forall i, 0 <= i < len(l) -> l(i) in a[i]) /\ (forall i, 0 <= i < len(l) - 1 -> l(i) >= l(i + 1))}
+popHighest
+struct sll *popHighest(int a[])
+The function creates a singly linked list based stack from a and pops the highest element, and returns the pointer to the top of the stack
+Input: a = {1,3,2,2,2}. Output: top -> {2 -> 2 -> 2 -> 1}
+Input: a = {1}. Output:  top -> {1}
+/*
+{a}{a', len(a') = len(a) /\ forall i, 0 <= i < len(a) -> a'[i] in a[i] /\ forall i, 0 <= i < (n - 1) -> a'[i] <= a'[i + 1]}
+The function sorts an array in non-decreasing order 
+*/
+extern void sortasc(int a[]);
+/*
+{}{t -> l, where len(l) = len(a) /\ forall i, 0 <= i < len(a) -> l(len(l) - i - 1) = a[i]}
+The function returns pointer to the head of the singly linked list, that contains the elements of a in reversed order
+*/
+extern struct sll *pushOneAtATime(int a[]);
+/*
+{top -> l}{t -> l \ l(0)}
+Removes the first element from the singly linked list if possible, and returns the pointer to the modified list
+*/
+extern struct sll *pop(struct sll *top);

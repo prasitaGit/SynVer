@@ -1,0 +1,6 @@
+{x |-> a * y |-> b}{x |-> b * y |-> b}
+swapOnlyX
+void swapOnlyX(int *x, int *y)
+The function assigns the value at *x with the value at *y 
+Input: (*x = 2, *y = 3). Output: (*x = 3, *y = 3)
+Input: (*x = 4, *y = 5). Output: (*x = 5, *y = 5)

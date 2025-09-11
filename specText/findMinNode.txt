@@ -1,0 +1,6 @@
+{r <> null}{r, return p, p = tl (k, v) tr, where forall t' in r -* p, t' = tl' (k', v') tr' -> k < k' }
+findMinNode
+struct tree *findMinNode(struct tree *r)
+The function returns the node in the BST rooted at r, whose key is minimum
+Input: r -> {(null, (1,3), null)}, Output: p -> (null, (1,3), null)
+Input: r -> {((null, (0, 2), null), (1,3), (null, (2, 3), null))}, Output: p -> (null, (0, 2), null)

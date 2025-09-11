@@ -1,0 +1,6 @@
+{h -> l, x}{return q; q -> (l(0..len(l) - 2))}
+deleteend
+struct sll *deleteend(struct sll *h)
+The function deletes the last node of a singly linked list pointed by h, when applicable
+Input: h -> {1 -> 3 -> 122}. Output: q -> {1 -> 3}
+Input: h -> {}. Output: q -> {}

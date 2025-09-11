@@ -1,0 +1,6 @@
+{*b -> l }{if len(l) = 0 then true else false}
+isListEmpty
+bool isListEmpty(sllbox b)
+The function returns true if the list whose head address is pointed to by b is empty, and false otherwise
+Input: *b -> {1->3->122->2->2}, Output: false
+Input: *b -> {},  Output: true

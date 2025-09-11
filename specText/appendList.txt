@@ -1,0 +1,6 @@
+{h1 -> l1 * h2 -> l2}{q, q -> (l1 ++ l2) }
+appendList
+struct sll *appendList(struct sll *h1, struct sll *h2)
+The function takes two lists, l1 with head h1, and l2 with head h2, appends l2 to l1, and returns the pointer to the head of the appended list
+Input: h1 -> {1 -> 3} , h2 -> {3 -> 2}. Output: q -> {1 -> 3 -> 3 -> 2}
+Input: h1 -> {}, h2 -> {3 -> 2}, Output: q -> {3 -> 2}

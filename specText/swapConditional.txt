@@ -1,0 +1,6 @@
+{x |-> a * y |-> b}{if a < b then x |-> (b + 1) * y |-> a else x |-> (a + 1) * y |-> a}
+swapConditional
+void swapConditional(int *x, int *y)
+The function swaps *x and *y if *x is less than *y, otherwise it updates *y to *x. For both cases, it increments *x by 1 after update
+Input: (*x = 2, *y = 3), Output: (*x = 4, *y = 2)
+Input: (*x = 5, *y = 2), Output: (*x = 6, *y = 5)

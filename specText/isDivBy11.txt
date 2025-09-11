@@ -1,0 +1,6 @@
+{n >= 0}{if n % 11 = 0 then true else false}
+isDivBy11
+bool isDivBy11(int n)
+The function returns true if n is divisible by 11 and false otherwise.
+Input: n = 44, Output: true
+Input: n = 5, Output: false

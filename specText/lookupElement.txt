@@ -1,0 +1,6 @@
+{h -> l, value }{h -> l, (exists i, 0 <= i < len(l), a(i) = value) <-> true}
+lookupElement
+bool lookupElement(struct sll *h, int value)
+The function returns true if there exists an element in the singly linked list with head h, that equals value
+Input: h -> {1->3->122->2->2}, value = 122, Output: true
+Input: h -> {0->90->1->2->2},  value = -1, Output: false

@@ -1,0 +1,6 @@
+{n >= 0}{n % 10}
+lastDigit
+unsigned lastDigit(unsigned n)
+The function returns the last digit of n
+Input: n = 101, Output: 1
+Input: n = 100, Output: 0

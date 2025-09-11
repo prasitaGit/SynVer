@@ -1,0 +1,16 @@
+{r <> null, k}{r \ (_, (k, v) _)}
+deleteTree
+struct tree *deleteTree(struct tree *r, int k)
+The function deletes the node from BST r with key k, and returns the root of the modified tree
+Input: r -> {(null, (1,3), null)}, k = 3, Output: t -> {(null, (1,3), null)}
+Input: r -> {((null, (0, 2), null), (1,3), (null, (2, 3), null))}, k = 1, Output: t -> {(null, (0,2), (null, (2, 3), null))}
+/*
+{r <> null}{return k, p = tl (k, v) tr, where forall t' in r -* p, t' = tl' (k', v') tr' -> k < k' }
+The function returns the minimum key in the BST rooted at r, where r is not null
+*/
+extern int findMinKey(struct tree *r);
+/*
+{r <> null}{return v, p = tl (k, v) tr, where forall t' in r -* p, t' = tl' (k', v') tr' -> v < v' }
+The function returns the minimum value in the BST rooted at r, where r is not null
+*/
+extern int findMinValue(struct tree *r);

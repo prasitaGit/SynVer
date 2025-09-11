@@ -1,0 +1,6 @@
+{p -> t}{}
+treeFree
+void treeFree(struct tree *p)
+The function frees the tree pointed by p
+Input: p -> {((null, (0, 2), null), (1,3), (null, (2, 3), null))},  Output: {}
+Input: p -> {},  Output: {}

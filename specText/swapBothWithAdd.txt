@@ -1,0 +1,6 @@
+{x |-> a * y |-> b}{x |-> (b + 1) * y |-> (a + 2)}
+swapBothWithAdd
+void swapBothWithAdd(int *x, int *y)
+The function swaps *x and *y and adds 1 to the updated value of *x and 2 to the updated value of *y
+Input: (*x = 2, *y = 3), Output: (*x = 4, *y = 4)
+Input: (*x = 5, *y = 2), Output: (*x = 3, *y = 7)

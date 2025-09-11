@@ -1,0 +1,6 @@
+{a, length = len(a), 0 <= ind < length }{(forall i, ind <= i < length - 1, a[ind] <= a[ind + 1]) <-> true}
+checkSorted
+bool checkSorted(int a[], unsigned ind, unsigned length)
+The function returns true if all elements are in non-decreasing order for the subarray a[ind...length - 1]
+Input: a = {1,3,2,2,2}, ind = 1, length = 5. Output: false
+Input: a = {1,3,1,2,2}, ind = 2, length = 5. Output: true

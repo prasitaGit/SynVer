@@ -1,0 +1,6 @@
+{h -> l, x}{return q; q -> (l ++ [x])}
+insertEnd
+struct sll *insertEnd(struct sll *h, int x)
+The function inserts the element x at the end of the singly linked list pointed by h, and returns the pointer of the updated list
+Input: h -> {1 -> 3 -> 122 -> 2 -> 2}, x = 0. Output: q -> {1 -> 3 -> 122 -> 2 -> 2 -> 0}
+Input: h -> {}, x = 1.  Output: q -> {1}

@@ -1,0 +1,6 @@
+{a * b, length = len(a) = len(b), 0 <= ind <= length, value }{a * b, forall ind <= i < length -> a[i] = b[i] <-> true}
+checkTwoArrayTypesSame
+bool checkTwoArrayTypesSame(char a[], int b[], unsigned ind, unsigned length)
+The function returns true if subarrays a[ind...length - 1] and b[ind ...length - 1], where a is of type char and b of type int are same
+Input: a = {'a','b','c','d','e'}, b = {65, 98, 99, 100, 101}, ind = 1, length = 5. Output: true
+Input: a = {'a','b','c','d','e'}, b = {65, 98, 99, 100, 101}, ind = 0, length = 5. Output: false

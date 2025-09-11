@@ -1,0 +1,6 @@
+{h -> l}{return c, h -> l * c -> l', len(l) = len(l'), forall i, 0 <= i < len(l), l(i) = l'(i)}
+copyList
+struct sll *copyList(struct sll *h)
+The function copies a singly linked list and returns the pointer to the copied singly linked list
+Input: h -> {1->3->122->2->2}, Output:  h -> {1->3->122->2->2}, c -> {1->3->122->2->2}
+Input: h -> {}, Output: h -> {}, c -> {}

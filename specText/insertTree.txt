@@ -1,0 +1,6 @@
+{r <> null, k}{r U (null, (k, v), null)}
+insertTree
+struct tree *insertTree(struct tree *r, int k, int v)
+The function inserts the node from BST r with key k, value v, and returns the root of the modified tree
+Input: r -> {(null, (1,3), null)}, k = 1, v = 2, Output: t -> {(null, (1,2), null)}
+Input: r -> {(null, (0,2), (null, (2, 3), null))}, k =1, v=3,  Output: r -> {(null, (0, 2),((null, (1,3), null), (2, 3), null))}

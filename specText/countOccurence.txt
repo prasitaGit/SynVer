@@ -1,0 +1,26 @@
+{a, length = len(a), num}{a, return count, count = (forall i, 0 <= i < length, |a[ind] == num|)}
+countOccurence
+unsigned countOccurence(int a[], unsigned length, int num)
+The function counts the number of occurences of num in a
+Input: a = {1,3,2,2,2}, length = 5, num = 2. Output: 3
+Input: a = {1,3,2,2,2}, length = 5, num = 0. Output: 0
+/*
+{a, length = len(a), num}{return checkmem, checkmem = (exists i, 0 <= i < length, a[ind] == num)}
+The function returns true if num is present in a and false otherwise 
+*/
+extern bool member(int a[], unsigned length, int num);
+/*
+{a, length = len(a), }{a', len(a') = length /\ forall i, 0 <= i < length -> a'[i] in a[i] /\ forall i, 0 <= i < (length - 1) -> a'[i] <= a'[i + 1]}
+The function sorts an array in non-decreasing order 
+*/
+extern void sortasc(int a[], unsigned length);
+/*
+{a, length = len(a), num}{return index, 0 <= index < length /\ a[index] = num /\ (forall i, 0 <= i < index -> a[i] != num)}
+The function returns the first index in a where num is found. You may assume num is always in a 
+*/
+extern unsigned lookupfirst(int a[], unsigned length, int num);
+/*
+{a, length = len(a), num}{return index, 0 <= index < length /\ a[index] = num /\ (forall i, idex < i < length -> a[i] != num)}
+The function returns the last index in a where num is found. You may assume num is always in a 
+*/
+extern unsigned lookuplast(int a[], unsigned length, int num);

@@ -1,0 +1,16 @@
+{a, n = length(a), n >= 0}{return t, a * t, where forall t' in t, t' = tl' (k', 0) tr' /\ (k' in a) -> tl' = NULL \/ tr' = NULL }
+skewedTree
+struct tree *skewedTree(int a[],unsigned n)
+The function takes an array of n elements and constructs a skewed binary search tree with the array elements being the keys to the BST and values being 0.
+Input: a = {3,1,5} n = 3, Output: t -> {(null, (1,0), (null, (3,0), (null, (5,0), null)))} 
+Input: a = {3} n = 1, Output: t -> {(null, (3,0), null)}
+/*
+{a, n = length(a), n >= 0}{a', length(a') = n /\ forall i, 0 <= i < n -> a'[i] in a[i] /\ forall i, 0 <= i < (n - 1) -> a'[i] <= a[i]}
+The function sorts an array in non-decreasing order 
+*/
+extern void sortasc(int a[],unsigned n);
+/*
+{a, n = length(a) /\ n >= 0 /\ 0 <= index < n}{return r, r * a, forall i, index <= i < n -> r := r U (null, (a[i], 0), null)}
+The function returns a BST by inserting the elements of the subarray a[index..n-1] one at a time, starting from 0
+*/
+extern struct tree *insOneAtATime(struct tree *r, int a[], unsigned index, unsigned n);

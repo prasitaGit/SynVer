@@ -1,0 +1,6 @@
+{a, b, c}{if a <= b && a <= c then a else if b <= a && b <= c then b else c}
+minThree
+int minThree(int a, int b, int c)
+The function returns the minimum of a, b and c
+Input: (a = 2, b = 3, c = 3). Output: 2
+Input: (a = 2, b = 2, c = 1). Output: 1

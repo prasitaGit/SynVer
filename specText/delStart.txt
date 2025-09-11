@@ -1,0 +1,6 @@
+{*h -> l}{*h -> l \ l(0)}
+delStart
+void delStart(sllbox h)
+The funciton removes the first element from the singly linked list if possible, and returns the pointer to the address of the modified list
+Input: *h -> {1 -> 3 -> 2}. Output:  *h -> {3 -> 2}
+Input: *h -> {}. Output: *h -> {} 

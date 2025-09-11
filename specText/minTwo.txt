@@ -1,0 +1,6 @@
+{a, b}{if a <= b then a else b}
+minTwo
+int minTwo(int a, int b)
+The function returns the minimum of a and b
+Input: (a = 2, b = 3). Output: 2
+Input: (a = 2, b = 2). Output: 2

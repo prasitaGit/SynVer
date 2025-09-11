@@ -1,0 +1,6 @@
+{n -> l }{return len(l); n -> l}
+listLength
+unsigned listLength(struct sll *n)
+The function returns the length of the singly linked list, whose pointed by n 
+Input: n -> {1->3->122->2->2}, Output: 5
+Input: n -> {0}, Output: 1

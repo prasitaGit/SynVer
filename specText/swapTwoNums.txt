@@ -1,0 +1,6 @@
+{x |-> a * y |-> b}{x |-> b * y |-> a}
+swapTwoNums
+void swapTwoNums(int *x, int *y)
+The function swaps *x and *y
+Input: (*x = 2, *y = 3), Output: (*x = 3, *y = 2)
+Input: (*x = 5, *y = 2), Output: (*x = 2, *y = 5)

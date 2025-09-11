@@ -1,0 +1,6 @@
+{a, b}{return (a * b)}
+mulTwo
+int mulTwo(int a, int b)
+The function returns the product of a and b
+Input: a = -2, b = 5, Output: -10
+Input: a = -2, b = -8, Output: 16

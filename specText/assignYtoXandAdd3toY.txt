@@ -1,0 +1,6 @@
+{x -> a * y -> b}{x -> a * y -> (a + 3)}
+assignYtoXandAdd3toY
+void assignYtoXandAdd3toY(int *x, int *y)
+The function assigns the value at *y with the value at (*x + 3)
+Input: (*x = 2, *y = 3), Output: (*x = 2, *y = 5)
+Input: (*x = 4, *y = 5), Output: (*x = 4, *y = 7)

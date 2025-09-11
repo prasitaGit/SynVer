@@ -1,0 +1,6 @@
+{r , k}{return b, (exists t', t' = _ (k, _) _ /\ r -* t' <> r) <-> b = true}
+bstLookup
+bool bstLookup(struct tree *r, int x)
+The function returns true if the BST rooted at r contains a node with key x, and false otherwise
+Input: r -> {(null, (0,2), (null, (2, 3), null))}, x = 3, Output: false
+Input: r ->{(null, (0, 2),((null, (1,3), null), (2, 3), null))}, x = 2. Output: true

@@ -1,0 +1,6 @@
+{h -> l, x}{return q; q -> (x :: l)}
+insertAtFront
+struct sll *insertAtFront(struct sll *h, int x)
+The function inserts the element x at the beginning of the singly linked list pointed by h. 
+Input: h -> {1 -> 3 -> 122 -> 2 -> 2}, x = 1. Output:  q -> {1 -> 1 -> 3 -> 122 -> 2 -> 2}
+Input: h -> {}, x = 2. Output: q -> {2}

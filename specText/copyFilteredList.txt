@@ -1,0 +1,6 @@
+{h -> l}{return q; q -> filter(fun x => x =? 2) l * h -> l}
+copyFilteredList
+struct sll *copyFilteredList(struct sll *h)
+The function copies a singly linked list by preserving nodes that equal 2 and filtering others out. It returns the pointer to the copied and filtered singly linked list
+Input: h -> {1->3->122->2->2}. Output:  q -> {2->2}, h -> {1->3->122->2->2}
+Input: h -> {1->3->122}. Output: q -> {}, h -> {}

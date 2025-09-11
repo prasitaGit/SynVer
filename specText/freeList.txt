@@ -1,0 +1,6 @@
+{h -> l}{}
+freeList
+void freeList(struct sll *h)
+The function free's the list - deletes all nodes from the singly linked list pointed by h
+Input: h -> {1 -> 3 -> 122 -> 2 -> 2}, Output: {}
+Input: h -> {}. Output: {}

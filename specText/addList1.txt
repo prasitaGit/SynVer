@@ -1,0 +1,6 @@
+{h -> l}{h -> l', len(l) = len(l'), forall i, 0 <= i < len(l), l'(i) = l(i) + 1}
+addList1
+struct sll *addList1(struct sll *h)
+The function adds all elements of the singly linked lists by 1 and returns the pointer to the head of the modified list
+Input: h -> { 1 -> 3 -> 2}. Output: h -> { 2 -> 4 -> 3}
+Input: h -> {}. Output: h -> {}

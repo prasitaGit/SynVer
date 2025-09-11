@@ -1,0 +1,11 @@
+{*h -> l, x }{*h -> (l ++ [x])}
+addLast
+void addLast(sllbox h, int x)
+The function returns adds x to the end of the singly linked list l whose head addresss is stored in h
+Input: *h -> {1->3->122->2->2}, x = 122, Output: *h -> {1->3->122->2->2->122}
+Input: a = {}, x = -1, Output: *h -> {-1}
+/*
+{n -> l, x }{q -> (l ++ [x])}
+The function returns adds x to the end of the singly linked list l whose head is n, and returns the head of the modified list
+*/
+extern void addHelper(struct sll* n, int x);

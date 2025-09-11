@@ -1,0 +1,6 @@
+{a, length = len(a), 0 <= ind <= length}{a, if (exists i, ind <= i < length, a[i] % 2 = 1 /\ forall j, ind <= j < i,  a[j] % 2 = 0) then return i else return -1}
+firstOddIndex
+int firstOddIndex(int a[], int ind, int length)
+The function returns the index of the first element that is odd in the subarray a[ind...length - 1]. If no such index exists, it returns -1.
+Input: a = {1,3,2,2,2}, ind = 1, length = 5. Output: 1
+Input: a = {1,3,2,2,2}, ind = 2, length = 5. Output: -1
