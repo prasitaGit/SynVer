@@ -300,7 +300,7 @@ if __name__ == '__main__':
       #compile coq
       pcoq = subprocess.run(["coqc", "-Q", ".", "GenProof", lines[1] + "C.v"], stderr=subprocess.PIPE)
       #call GenProof
-      p = subprocess.run(["python3.9", "genProof.py",sys.argv[1],lines[1] + ".v"], stderr=subprocess.PIPE)
+      p = subprocess.run(["python3", "genProof.py",sys.argv[1],lines[1] + ".v"], stderr=subprocess.PIPE)
       
       #run alectryon to output the respective json file
 
