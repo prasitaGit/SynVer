@@ -72,22 +72,6 @@ Alternatively, you can build the image yourself using the provided `Dockerfile` 
 
 ---
 
-## 📂 Repository Structure
-
-```
-SYNVER/
-├── synthesize.py          # Interface for the coder LLM (program synthesis)
-├── genProof.py            # Interface for the prover LLM (proof synthesis)
-├── specText/              # Natural language specifications
-├── proof/                 # Coq proofs and verified specs
-├── sllProof.v             # Singly linked list proof
-├── bstFunctionalProofs.v  # Binary search tree proof
-├── Dockerfile             # Docker environment setup
-└── README.md              # Project documentation
-```
-
----
-
 ## 🧾 Citation
 
 If you use **SYNVER** in your research, please cite our Zenodo DOI above.
