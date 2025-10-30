@@ -78,6 +78,12 @@ If you use **SYNVER** in your research, please cite our Zenodo DOI above.
 
 ---
 
+## 🧾 Pre-print
+
+🔗 [Paper](https://prasitagit.github.io/papers/SynverPreprint.pdf)
+
+---
+
 ## 📜 License
 
 This repository is released under an open-source license. Please see the `LICENSE` file for details.
