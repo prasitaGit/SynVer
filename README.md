@@ -84,9 +84,9 @@ If you use **SYNVER** in your research, please cite our Zenodo DOI above.
 
 ---
 
-## 🧾 Talk
+## 🧾 Detailed Talk
 
-🔗 [Talk](https://prasitagit.github.io/papers/SynverPreprint.pdf)
+🔗 [Talk](https://prasitagit.github.io/papers/ASEFullTalk.mp4)
 
 ---
 
